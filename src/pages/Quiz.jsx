@@ -27,8 +27,8 @@ export default function Quiz() {
   return (
     <div className="max-w-2xl mx-auto">
       <header className="text-center mb-6">
-        <h1 className="font-script text-5xl text-rose-600">A little quiz</h1>
-        <p className="text-rose-400 mt-1">Just for you, my love.</p>
+        <h1 className="font-script text-4xl sm:text-5xl text-rose-600">A little quiz</h1>
+        <p className="text-rose-400 mt-1 text-sm sm:text-base">Just for you, my love.</p>
       </header>
 
       {/* progress */}
@@ -47,9 +47,9 @@ export default function Quiz() {
 
       <div
         key={q.id}
-        className="bg-white/90 backdrop-blur-md border border-rose-100 rounded-3xl shadow-xl p-8 animate-[fadeIn_0.4s_ease-out]"
+        className="bg-white/90 backdrop-blur-md border border-rose-100 rounded-3xl shadow-xl p-5 sm:p-8 animate-[fadeIn_0.4s_ease-out]"
       >
-        <p className="font-serif text-2xl text-rose-700 mb-6 text-center">{q.question}</p>
+        <p className="font-serif text-lg sm:text-2xl text-rose-700 mb-6 text-center">{q.question}</p>
 
         {q.type === 'image' && (
           <img

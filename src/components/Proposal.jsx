@@ -99,10 +99,10 @@ export default function Proposal() {
         Take your time&hellip; but please pick the right one. 😉
       </p>
 
-      <div className="mt-10 flex items-center gap-6 relative">
+      <div className="mt-10 flex items-center gap-4 sm:gap-6 relative">
         <button
           onClick={handleYes}
-          className="px-10 py-4 rounded-full bg-gradient-to-r from-rose-500 to-rose-600 hover:from-rose-600 hover:to-rose-700 text-white text-lg font-bold shadow-xl shadow-rose-300 transition transform hover:-translate-y-1 hover:scale-105"
+          className="px-8 sm:px-10 py-3.5 sm:py-4 rounded-full bg-gradient-to-r from-rose-500 to-rose-600 hover:from-rose-600 hover:to-rose-700 text-white text-base sm:text-lg font-bold shadow-xl shadow-rose-300 transition transform hover:-translate-y-1 hover:scale-105"
         >
           Yes 💗
         </button>
@@ -117,7 +117,7 @@ export default function Proposal() {
               ? { position: 'fixed', top: noPos.top, left: noPos.left, zIndex: 40 }
               : undefined
           }
-          className="px-6 py-3 rounded-full bg-white border-2 border-rose-300 text-rose-500 font-semibold transition"
+          className="px-5 sm:px-6 py-3 rounded-full bg-white border-2 border-rose-300 text-rose-500 font-semibold text-sm sm:text-base transition"
         >
           {noLabel}
         </button>

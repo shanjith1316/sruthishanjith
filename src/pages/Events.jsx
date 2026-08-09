@@ -154,9 +154,9 @@ export default function Events() {
 
   return (
     <div className="max-w-6xl mx-auto">
-      <header className="text-center mb-8">
-        <h1 className="font-script text-5xl text-rose-600">Our Events</h1>
-        <p className="text-rose-400 mt-1">Every little moment, kept forever.</p>
+      <header className="text-center mb-6 sm:mb-8">
+        <h1 className="font-script text-4xl sm:text-5xl text-rose-600">Our Events</h1>
+        <p className="text-rose-400 mt-1 text-sm sm:text-base">Every little moment, kept forever.</p>
       </header>
 
       <section

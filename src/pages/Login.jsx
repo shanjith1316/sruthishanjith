@@ -51,15 +51,15 @@ export default function Login() {
 
       <form
         onSubmit={submit}
-        className="relative z-10 w-full max-w-md bg-white/85 backdrop-blur-md rounded-3xl shadow-2xl border border-rose-100 p-10 text-center"
+        className="relative z-10 w-full max-w-md bg-white/85 backdrop-blur-md rounded-3xl shadow-2xl border border-rose-100 p-6 sm:p-10 text-center"
       >
         <div className="text-5xl mb-2 animate-pulseHeart">💗</div>
-        <h1 className="font-script text-4xl md:text-5xl text-rose-600 leading-tight">
+        <h1 className="font-script text-3xl sm:text-4xl md:text-5xl text-rose-600 leading-tight">
           Welcome Sruthi <span className="mx-1">❤️</span> Shanjith
         </h1>
         <p className="mt-3 text-rose-400 text-sm">Enter our little secret to come inside.</p>
 
-        <div className="mt-8 flex justify-center gap-3">
+        <div className="mt-8 flex justify-center gap-2 sm:gap-3">
           {digits.map((d, i) => (
             <input
               key={i}
@@ -69,7 +69,7 @@ export default function Login() {
               onKeyDown={(e) => handleKey(i, e)}
               inputMode="numeric"
               maxLength={1}
-              className="w-14 h-16 text-center text-2xl font-semibold rounded-xl border-2 border-rose-200 bg-rose-50 focus:border-rose-500 focus:ring-2 focus:ring-rose-200 outline-none transition"
+              className="w-12 h-14 sm:w-14 sm:h-16 text-center text-xl sm:text-2xl font-semibold rounded-xl border-2 border-rose-200 bg-rose-50 focus:border-rose-500 focus:ring-2 focus:ring-rose-200 outline-none transition"
               aria-label={`PIN digit ${i + 1}`}
             />
           ))}
