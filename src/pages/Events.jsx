@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { supabase, EVENTS_TABLE, EVENTS_BUCKET } from '../lib/supabaseClient.js'
+import LoveWidget from '../components/LoveWidget.jsx'
 
 const initialForm = { title: '', event_date: '', description: '', file: null }
 
@@ -158,6 +159,8 @@ export default function Events() {
         <h1 className="font-script text-4xl sm:text-5xl text-rose-600">Our Events</h1>
         <p className="text-rose-400 mt-1 text-sm sm:text-base">Every little moment, kept forever.</p>
       </header>
+
+      <LoveWidget />
 
       <section
         ref={formRef}

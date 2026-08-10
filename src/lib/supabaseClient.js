@@ -14,3 +14,5 @@ export const supabase = createClient(url || 'http://localhost', anon || 'anon')
 
 export const EVENTS_TABLE = 'events'
 export const EVENTS_BUCKET = 'event-images'
+export const LETTERS_TABLE = 'love_letters'
+export const BUCKET_TABLE = 'bucket_list'

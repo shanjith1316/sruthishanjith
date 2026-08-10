@@ -39,6 +39,26 @@ export default function Sidebar({ onNavigate }) {
           Our Events
         </NavLink>
         <NavLink
+          to="/letters"
+          onClick={onNavigate}
+          className={({ isActive }) =>
+            `${linkBase} ${isActive ? linkActive : linkIdle}`
+          }
+        >
+          <span className="text-lg">💌</span>
+          Love Letters
+        </NavLink>
+        <NavLink
+          to="/bucket"
+          onClick={onNavigate}
+          className={({ isActive }) =>
+            `${linkBase} ${isActive ? linkActive : linkIdle}`
+          }
+        >
+          <span className="text-lg">✨</span>
+          Bucket List
+        </NavLink>
+        <NavLink
           to="/quiz"
           onClick={onNavigate}
           className={({ isActive }) =>
